@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "pocket"
+version = "0.1.0"
+description = "Basic wrapper to chat with OpenAI"
+authors = ["Lainey Neild", "lainey@infograte.com"]
+license = "Proprietary"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
