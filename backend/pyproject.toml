@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Lainey Neild <lainey@infograte.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+openai = "^1.51.2"
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+pydantic = "^2.10.3"
+pydantic-settings = "^2.6.1"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+ruff = "^0.8.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
