@@ -25,7 +25,7 @@ export const FitnessForm = () => {
 
     const mutation = useMutation<string, Error, IFormValues, unknown>({
         mutationFn: async (formData: IFormValues) => {
-            const response = await fetch("http://localhost:8000/workout", {
+            const response = await fetch("/api/workout", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
