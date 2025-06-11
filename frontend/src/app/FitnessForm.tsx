@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import React, { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
@@ -33,7 +33,8 @@ export const FitnessForm = () => {
             if (!response.ok) {
                 throw new Error("Network response was not ok");
             }
-            return response.text();
+            const text = await response.text();
+            return text.replace(/^"|"$/g, '');
         },
     });
 
